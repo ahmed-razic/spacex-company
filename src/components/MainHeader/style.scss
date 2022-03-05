@@ -1,0 +1,43 @@
+.header {
+  &__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+
+    & a {
+      text-decoration: none;
+      color: var(--primary-light);
+    }
+
+    & span {
+      font-weight: bolder;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__name {
+    font-size: 50px;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+  }
+
+  &__description {
+    font-size: 30px;
+    line-height: normal;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .header {
+    &__container {
+      margin: 1rem;
+    }
+
+    &__description {
+      font-size: 20px;
+    }
+  }
+}

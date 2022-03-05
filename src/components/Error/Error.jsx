@@ -1,6 +1,6 @@
 import './style.scss';
 
-function Error({ error }) {
+function Error(error) {
   return (
     <div className='error__container d-flex justify-content-center align-items-center'>
       <h3>{error.message}</h3>

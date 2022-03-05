@@ -1,20 +1,22 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ApolloProvider, InMemoryCache, ApolloClient } from '@apollo/client';
+import { gql, useQuery } from '@apollo/client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 
-const client = new ApolloClient({
-  uri: 'https://api.spacex.land/graphql',
-  cache: new InMemoryCache(),
-});
+function App() {
+  const client = new ApolloClient({
+    uri: 'https://api.spacex.land/graphql',
+    cache: new InMemoryCache(),
+  });
 
-const App = () => (
-  <ApolloProvider client={client}>
-    <Router>
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-      </Routes>
-    </Router>
-  </ApolloProvider>
-);
-
+  return (
+    <ApolloProvider client={client}>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+        </Routes>
+      </Router>
+    </ApolloProvider>
+  );
+}
 export default App;
