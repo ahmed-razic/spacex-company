@@ -40,10 +40,10 @@ function Launches() {
   );
 
   return (
-    <>
-      <h1 className='display-5 text-center m-5'>Previous Launches</h1>
+    <div className='launches__container'>
+      <h1 className='display-5 text-center pt-5'>Previous Launches</h1>
       <LaunchesList launches={launches} />
-    </>
+    </div>
   );
 }
 export default Launches;
