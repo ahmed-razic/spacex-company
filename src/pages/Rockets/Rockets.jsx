@@ -46,7 +46,7 @@ function Rockets() {
   if (loading) return <Loader />;
   if (error) return <Error error={error} />;
 
-  const rocketData = { ...data.rocket, rocketId };
+  const rocketData = { ...data.rocket };
 
   return <Rocket rocketData={rocketData} />;
 }
