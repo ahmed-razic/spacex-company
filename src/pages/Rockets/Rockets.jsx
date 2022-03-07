@@ -31,6 +31,11 @@ function Rockets() {
           propellant_2
           thrust_to_weight
           type
+          number
+          thrust_vacuum {
+            kN
+            lbf
+          }
         }
         wikipedia
         cost_per_launch
