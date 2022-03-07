@@ -35,6 +35,7 @@ function Rockets() {
         wikipedia
         cost_per_launch
         id
+        stages
       }
     }
   `;

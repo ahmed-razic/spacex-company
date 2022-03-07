@@ -1,14 +1,28 @@
 .header {
   &__container {
     width: 100%;
-    bottom: 450px;
+    color: var(--primary-dark);
+    padding: 0 2rem;
   }
 
   &__text {
-    margin-top: 10rem;
+    margin-top: 2rem;
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
+  }
+  &__description {
+    margin-top: 1rem;
+    text-align: justify;
+  }
+
+  &__wiki {
+    align-self: flex-end;
+
+    & a {
+      color: var(--primary-dark) !important;
+      font-weight: bold;
+    }
   }
 }
 
