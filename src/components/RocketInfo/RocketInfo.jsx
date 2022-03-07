@@ -3,6 +3,7 @@ import useRocketInfo from '../../hooks/useRocketInfo';
 import TableInfo from '../TableInfo';
 
 function RocketInfo({ name, rocket, engine, isEngine }) {
+  console.log(name);
   const tableContent = useRocketInfo({ name, rocket, engine, isEngine });
   return (
     <div className='container d-flex flex-column justify-content-around'>

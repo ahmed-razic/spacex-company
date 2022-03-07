@@ -1,5 +1,5 @@
 function useRocketInfo({ name, rocket, engine, isEngine }) {
-  const header = name;
+  const header = name.toUpperCase();
 
   const firstRow = {
     title: isEngine ? 'NUMBER' : 'HEIGHT',
@@ -27,5 +27,4 @@ function useRocketInfo({ name, rocket, engine, isEngine }) {
 
   return { header, body, img };
 }
-
 export default useRocketInfo;
