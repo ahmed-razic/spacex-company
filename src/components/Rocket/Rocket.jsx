@@ -29,7 +29,7 @@ function Rocket({ rocketData }) {
           name={name}
           rocket={{ cost: cost_per_launch, diameter, stages, height, mass }}
         />
-        <RocketInfo name={engines.type} engine={engines} isEngine />
+        <RocketInfo name={engines.type} engine={engines} isEngine={true} />
       </div>
     </>
   );
