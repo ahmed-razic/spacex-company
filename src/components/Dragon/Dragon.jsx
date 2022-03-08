@@ -4,18 +4,19 @@ import DragonInfo from '../DragonInfo';
 
 function Dragon({ dragon }) {
   const {
-    id,
     description,
     diameter,
     dry_mass_kg,
     dry_mass_lb,
     first_flight,
     heat_shield,
+    id,
     name,
     thrusters,
     launch_payload_mass,
     wikipedia,
   } = dragon;
+
   return (
     <div className='dragon__container d-flex flex-column align-items-center justify-content-around'>
       <DragonHeader

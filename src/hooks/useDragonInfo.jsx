@@ -18,16 +18,16 @@ function useDragonInfo({ name, dragon }) {
 
   const secondRow = {
     title: 'DIAMETER',
-    value: diameter.meters + ' m/ ' + diameter.feet + ' ft',
+    value: diameter.meters + ' m / ' + diameter.feet + ' ft',
   };
   const thirdRow = {
     title: 'DRY MASS',
-    value: dry_mass_kg + ' kg/ ' + dry_mass_lb + ' lb',
+    value: dry_mass_kg + ' kg / ' + dry_mass_lb + ' lb',
   };
 
   const fourthRow = {
     title: 'PAYLOAD MASS',
-    value: launch_payload_mass.kg + ' kg/ ' + launch_payload_mass.lb + ' lb',
+    value: launch_payload_mass.kg + ' kg / ' + launch_payload_mass.lb + ' lb',
   };
 
   const fifthRow = {
@@ -38,21 +38,22 @@ function useDragonInfo({ name, dragon }) {
 
   const sixthRow = {
     title: 'THRUSTERS',
-    value: thrusters.type + ' ' + thrusters.amount + ' pcs',
+    value: thrusters[0].type + ' ' + thrusters[0].amount + ' pcs',
   };
 
   const seventhRow = {
     title: 'FUEL 1',
-    value: thrusters.fuel_1,
+    value: thrusters[0].fuel_1,
   };
 
   const eightRow = {
     title: 'FUEL 2',
-    value: thrusters.fuel_2,
+    value: thrusters[0].fuel_2,
   };
   const ninthRow = {
     title: 'THRUST',
-    value: thrusters.thrust.kN + ' kN/ ' + thrusters.thrust.lbf + ' lbf ',
+    value:
+      thrusters[0].thrust.kN + ' kN / ' + thrusters[0].thrust.lbf + ' lbf ',
   };
 
   const body = [

@@ -1,7 +1,7 @@
 .header {
   &__container {
     width: 100%;
-    color: var(--primary-dark);
+    color: var(--spacex-blue) !important;
     padding: 0 2rem;
   }
 
@@ -20,7 +20,7 @@
     align-self: flex-end;
 
     & a {
-      color: var(--primary-dark) !important;
+      color: var(--spacex-blue) !important;
       font-weight: bold;
     }
   }

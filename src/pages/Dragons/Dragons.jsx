@@ -52,9 +52,8 @@ function Dragons() {
   if (loading) return <Loader />;
   if (error) return <Error error={error} />;
 
-  const dragon = { ...data.dragon };
-  console.log(dragon);
+  const dragon = data.dragon;
 
-  return <Dragon />;
+  return <Dragon dragon={dragon} />;
 }
 export default Dragons;
