@@ -6,7 +6,7 @@ const MenuLinks = ({ rockets, toggleMenu }) =>
     <div key={rocket.name} className='nav__link'>
       <Link
         onClick={() => toggleMenu(false)}
-        to={`/rocket/${rocket.id}`}
+        to={`/rockets/${rocket.id}`}
         className='m-0'
       >
         {rocket.name.toUpperCase()}

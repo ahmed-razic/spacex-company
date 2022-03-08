@@ -1,6 +1,5 @@
 import './style.scss';
-import { FaTwitter, FaFlickr, FaFacebook, FaChrome } from 'react-icons/fa';
-import SpaceXSvgLogo from './../Logo';
+import { FaTwitter, FaFlickr, FaChrome } from 'react-icons/fa';
 
 function MainHeader({ data }) {
   const valuation = data.company.valuation.toLocaleString('en-US', {
@@ -12,7 +11,7 @@ function MainHeader({ data }) {
     <div className='header__container'>
       <div className='container mb-4'>
         <h1 className='header__name d-flex justify-content-center'>
-          <SpaceXSvgLogo />
+          {data.company.name}
         </h1>
         <p className='header__description'>{data.company.summary}</p>
       </div>
