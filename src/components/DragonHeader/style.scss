@@ -1,0 +1,39 @@
+.header {
+  &__container {
+    width: 100%;
+    color: var(--primary-dark);
+    padding: 0 2rem;
+  }
+
+  &__text {
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__description {
+    margin-top: 1rem;
+    text-align: justify;
+  }
+
+  &__wiki {
+    align-self: flex-end;
+
+    & a {
+      color: var(--primary-dark) !important;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    &__container {
+      bottom: 350px;
+    }
+
+    &__text {
+      font-size: 3rem;
+    }
+  }
+}

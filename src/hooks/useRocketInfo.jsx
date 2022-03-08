@@ -5,13 +5,13 @@ function useRocketInfo({ name, rocket, engine, isEngine }) {
     title: isEngine ? 'NUMBER' : 'HEIGHT',
     value: isEngine
       ? engine.number
-      : rocket.height.meters + ' m/ ' + rocket.height.feet + ' /ft',
+      : rocket.height.meters + ' m/ ' + rocket.height.feet + ' ft',
   };
   const secondRow = {
     title: isEngine ? 'PROPELLANT1' : 'DIAMETER',
     value: isEngine
       ? engine.propellant_1
-      : rocket.diameter.meters + ' m/ ' + rocket.diameter.feet + ' /ft',
+      : rocket.diameter.meters + ' m/ ' + rocket.diameter.feet + ' ft',
   };
 
   const thirdRow = {
@@ -22,8 +22,8 @@ function useRocketInfo({ name, rocket, engine, isEngine }) {
   const fourthRow = {
     title: isEngine ? 'THRUST IN VACUMM' : 'MASS',
     value: isEngine
-      ? engine.thrust_vacuum.kN + ' kN/ ' + engine.thrust_vacuum.lbf + ' /lbf '
-      : rocket.mass.kg + ' kg/ ' + rocket.mass.lb + ' /lb',
+      ? engine.thrust_vacuum.kN + ' kN/ ' + engine.thrust_vacuum.lbf + ' lbf '
+      : rocket.mass.kg + ' kg/ ' + rocket.mass.lb + ' lb',
   };
 
   const fifthRow = {

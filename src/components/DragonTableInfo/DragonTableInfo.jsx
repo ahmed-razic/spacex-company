@@ -1,6 +1,6 @@
 import './style.scss';
 
-function TableInfo({ title, data }) {
+function DragonTableInfo({ title, data }) {
   return (
     <div className='table-info col-12 col-md-8 col-lg-7 d-flex flex-column justify-content-center'>
       <h5>{title}</h5>
@@ -20,4 +20,4 @@ function TableInfo({ title, data }) {
   );
 }
 
-export default TableInfo;
+export default DragonTableInfo;

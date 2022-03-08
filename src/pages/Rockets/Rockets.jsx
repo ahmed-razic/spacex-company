@@ -9,7 +9,7 @@ function Rockets() {
   const params = useParams();
   const rocketId = params.id;
 
-  const GET_ROCKETS_DATA = gql`
+  const GET_ROCKET_DATA = gql`
     query GET_ROCKET_DATA($rocketId: ID!) {
       rocket(id: $rocketId) {
         description
@@ -45,7 +45,7 @@ function Rockets() {
     }
   `;
 
-  const { data, error, loading } = useQuery(GET_ROCKETS_DATA, {
+  const { data, error, loading } = useQuery(GET_ROCKET_DATA, {
     variables: { rocketId },
   });
 
