@@ -28,7 +28,6 @@ const NavBar = () => {
   if (loading) return <Loader />;
   if (error) return <Error error={error} />;
 
-  console.log(data);
   return (
     <div className='container-fluid' ref={navRef}>
       <div className='row'>
@@ -38,12 +37,6 @@ const NavBar = () => {
           toggleMenu={setIsMenuOpen}
           rockets={data.rockets}
         />
-        {/* <TopMenu
-          isMenuOpen={isMenuOpen}
-          isMobileView={isMobileView}
-          toggleMenu={setIsMenuOpen}
-          rockets={data.rockets}
-        /> */}
         <SideMenu
           isMenuOpen={isMenuOpen}
           isMobileView={isMobileView}
