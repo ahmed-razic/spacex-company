@@ -1,5 +1,6 @@
 import { ApolloProvider, InMemoryCache, ApolloClient } from '@apollo/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar';
 import Home from './pages/Home/Home';
 import Launches from './pages/Launches/Launches';
 import Rockets from './pages/Rockets/Rockets';
@@ -14,6 +15,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
+        <NavBar />
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/launches' element={<Launches />}></Route>
