@@ -3,7 +3,6 @@ import { gql, useQuery } from '@apollo/client';
 import Error from '../../components/Error';
 import Loader from '../../components/Loader';
 import MainHeader from '../../components/MainHeader';
-import { Fragment } from 'react';
 
 function Home() {
   const GET_COMPANY_INFO = gql`
