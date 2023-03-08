@@ -1,4 +1,4 @@
-import { ApolloProvider, InMemoryCache, ApolloClient } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Home from './pages/Home/Home';
@@ -10,7 +10,7 @@ function App() {
   const client = new ApolloClient({
     uri: 'https://api.spacex.land/graphql',
     cache: new InMemoryCache(),
-  });
+  }); 
 
   return (
     <ApolloProvider client={client}>
